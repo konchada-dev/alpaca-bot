@@ -1,0 +1,55 @@
+{
+  "watchlist": [
+    {
+      "symbol": "SPY",
+      "description": "S&P 500 ETF — baseline market exposure",
+      "max_allocation_pct": 35
+    },
+    {
+      "symbol": "QQQM",
+      "description": "Nasdaq 100 ETF — tech-heavy growth exposure",
+      "max_allocation_pct": 10
+    },
+    {
+      "symbol": "TQQQ",
+      "description": "3x leveraged Nasdaq — aggressive growth play",
+      "max_allocation_pct": 10
+    },
+    {
+      "symbol": "SGOV",
+      "description": "Short-term Treasury ETF — safe haven and cash alternative",
+      "max_allocation_pct": 10
+    },
+    {
+      "symbol": "MSFT",
+      "description": "Cloud/enterprise — AI infrastructure play",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "GOOG",
+      "description": "Search/AI leader — diversified tech exposure",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "SNOW",
+      "description": "Cloud data platform — high growth but volatile",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "NVDA",
+      "description": "GPU/AI leader — key beneficiary of AI boom",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "TSM",
+      "description": "Semiconductor foundry — critical supplier to tech industry",
+      "max_allocation_pct": 5
+    },
+    {
+      "symbol": "CRWD",
+      "description": "Cybersecurity leader — growing demand for security solutions",
+      "max_allocation_pct": 5
+    }
+  ],
+  "cash_reserve_pct": 5
+}
