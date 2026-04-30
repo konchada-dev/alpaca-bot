@@ -2,7 +2,7 @@
 
 import os
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import json
 
 ALPACA_KEY = os.getenv("APCA_API_KEY_ID")
@@ -16,9 +16,11 @@ def get_bars(symbol, timeframe="1Day", limit=60):
         "APCA-API-SECRET-KEY": ALPACA_SECRET,
     }
     url = f"https://data.alpaca.markets/v2/stocks/{symbol}/bars"
+    start = (datetime.now(timezone.utc) - timedelta(days=90)).strftime("%Y-%m-%d")
     params = {
         "timeframe": timeframe,
         "limit": limit,
+        "start": start,
         "adjustment": "raw"
     }
     response = requests.get(url, headers=headers, params=params)
